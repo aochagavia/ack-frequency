@@ -1537,8 +1537,8 @@ reordering:<a href="#section-6.1.1-2" class="pilcrow">¶</a></p>
   Receive 5 -&gt; Send ACK
   Receive 8
   Receive 9 -&gt; Send ACK<a href="#section-6.1.1-3" class="pilcrow">¶</a></p>
-<p id="section-6.1.1-4">If the reordering threshold is 5 and we're only considering ACKs sent due to
-reordering:<a href="#section-6.1.1-4" class="pilcrow">¶</a></p>
+<p id="section-6.1.1-4">If the reordering threshold is 5 and assuming that packets are received close enough
+in time to not exceed max_ack_delay:<a href="#section-6.1.1-4" class="pilcrow">¶</a></p>
 <p id="section-6.1.1-5">Receive 1
   Receive 3 -&gt; 2 Missing
   Receive 5 -&gt; 4 Missing
