@@ -5,8 +5,8 @@
 QUIC                                                          J. Iyengar
 Internet-Draft                                                    Fastly
 Intended status: Standards Track                                I. Swett
-Expires: 27 August 2023                                           Google
-                                                        23 February 2023
+Expires: 31 August 2023                                           Google
+                                                        27 February 2023
 
 
                      QUIC Acknowledgement Frequency
@@ -42,7 +42,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 27 August 2023.
+   This Internet-Draft will expire on 31 August 2023.
 
 Copyright Notice
 
@@ -357,14 +357,14 @@ Table of Contents
    If the reordering theshold is 3 and we're only considering ACKs sent
    due to reordering:
 
-   Receive 1 Receive 3 Receive 4 Receive 5 -> Send ACK Receive 8 Receive
-   9 -> Send ACK
+   Receive 1 Receive 3 -> 2 Missing Receive 4 Receive 5 -> Send ACK
+   Receive 8 Receive 9 -> Send ACK
 
    If the reordering threshold is 5 and we're only considering ACKs sent
    due to reordering:
 
-   Receive 1 Receive 3 Receive 5 Receive 6 Receive 7 -> Send ACK Receive
-   8 Receive 9 -> Send ACK
+   Receive 1 Receive 3 -> 2 Missing Receive 5 -> 4 Missing Receive 6
+   Receive 7 -> Send ACK Receive 8 Receive 9 -> Send ACK
 
 6.2.  Expediting Congestion Signals
 
