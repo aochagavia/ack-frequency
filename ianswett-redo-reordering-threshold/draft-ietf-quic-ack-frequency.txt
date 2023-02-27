@@ -354,14 +354,14 @@ Table of Contents
    there is a missing packet, it must be at least 1 packet number less,
    so an immediate ACK is sent.
 
-   If the reordering theshold is 3 and assuming that packets are
-   received close enough in time to not exceed max_ack_delay:
+   If the reordering theshold is 3 and ACKs are only sent due to
+   reordering:
 
    Receive 1 Receive 3 -> 2 Missing Receive 4 Receive 5 -> Send ACK
    Receive 8 Receive 9 -> Send ACK
 
-   If the reordering threshold is 5 and assuming that packets are
-   received close enough in time to not exceed max_ack_delay:
+   If the reordering threshold is 5 and ACKs are only sent due to
+   reordering:
 
    Receive 1 Receive 3 -> 2 Missing Receive 5 -> 4 Missing Receive 6
    Receive 7 -> Send ACK Receive 8 Receive 9 -> Send ACK
