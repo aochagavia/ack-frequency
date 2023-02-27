@@ -1532,18 +1532,19 @@ an immediate ACK is sent.<a href="#section-6.1.1-1" class="pilcrow">¶</a></p>
 <p id="section-6.1.1-2">If the reordering theshold is 3 and ACKs are only sent due to reordering:<a href="#section-6.1.1-2" class="pilcrow">¶</a></p>
 <p id="section-6.1.1-3">Receive 1
   Receive 3 -&gt; 2 Missing
-  Receive 4
-  Receive 5 -&gt; Send ACK
-  Receive 8
-  Receive 9 -&gt; Send ACK<a href="#section-6.1.1-3" class="pilcrow">¶</a></p>
+  Receive 4 -&gt; 2 Missing
+  Receive 5 -&gt; Send ACK because of 2
+  Receive 8 -&gt; 6,7 Missing
+  Receive 9 -&gt; Send ACK because of 6, 7 Missing
+  Receive 10 -&gt; Send ACK because of 7<a href="#section-6.1.1-3" class="pilcrow">¶</a></p>
 <p id="section-6.1.1-4">If the reordering threshold is 5 and ACKs are only sent due to reordering:<a href="#section-6.1.1-4" class="pilcrow">¶</a></p>
 <p id="section-6.1.1-5">Receive 1
   Receive 3 -&gt; 2 Missing
-  Receive 5 -&gt; 4 Missing
-  Receive 6
-  Receive 7 -&gt; Send ACK
-  Receive 8
-  Receive 9 -&gt; Send ACK<a href="#section-6.1.1-5" class="pilcrow">¶</a></p>
+  Receive 5 -&gt; 2 Missing, 4 Missing
+  Receive 6 -&gt; 2 Missing, 4 Missing
+  Receive 7 -&gt; Send ACK because of 2, 4 Missing
+  Receive 8 -&gt; 4 Missing
+  Receive 9 -&gt; Send ACK because of 4<a href="#section-6.1.1-5" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>
