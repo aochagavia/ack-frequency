@@ -1512,12 +1512,13 @@ have not yet been received.<a href="#section-6.1-2.6.1" class="pilcrow">¶</a></
 Threshold value SHOULD send an immediate ACK when the gap
 between the smallest Unreported Missing packet and the Largest Unacked is greater
 than or equal to the Reordering Threshold value.<a href="#section-6.1-3" class="pilcrow">¶</a></p>
-<p id="section-6.1-4">In order to ensure timely loss detection, it is optimal to send a Reordering Threshold value of 1 less than
-the packet threshold used by the data sender for loss detection.
-If the threshold is smaller, the additional ACK does not provide input to
-the loss detection. If the value is larger, it creates unnecessary delays.
-(<span><a href="https://rfc-editor.org/rfc/rfc9002#section-18.2" class="relref">Section 18.2</a> of [<a href="#QUIC-RECOVERY" class="cite xref">QUIC-RECOVERY</a>]</span>) recommends a default packet threshold for
-loss detection of 3, equivalent to a Reordering Threshold of 2.<a href="#section-6.1-4" class="pilcrow">¶</a></p>
+<p id="section-6.1-4">In order to ensure timely loss detection, it is optimal to send a Reordering
+Threshold value of 1 less than the packet threshold used by the data sender for
+loss detection. If the threshold is smaller, an ACK_FRAME is sent before the
+packet can be declared lost based on the packet threshold. If the value is
+larger, it causes unnecessary delays. (<span><a href="https://rfc-editor.org/rfc/rfc9002#section-18.2" class="relref">Section 18.2</a> of [<a href="#QUIC-RECOVERY" class="cite xref">QUIC-RECOVERY</a>]</span>)
+recommends a default packet threshold for loss detection of 3, equivalent to
+a Reordering Threshold of 2.<a href="#section-6.1-4" class="pilcrow">¶</a></p>
 <p id="section-6.1-5">If the most recent ACK_FREQUENCY frame received from the peer has a <code>Reordering
 Threshold</code> value of 0, the endpoint SHOULD NOT send an immediate
 acknowledgement in response to packets received out of order, and instead
