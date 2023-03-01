@@ -324,7 +324,7 @@ Table of Contents
    value other than 1 is received.
 
    Largest Unacked  The largest packet number among all received ack-
-      eliciting packets so far.
+      eliciting packets.
 
    Largest Acked  The Largest Acknowledged value sent in an ACK frame.
 
