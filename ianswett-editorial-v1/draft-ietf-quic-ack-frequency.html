@@ -1278,9 +1278,9 @@ sender, and CPU utilization at both a data sender and a data receiver.<a href="#
 endpoint performance in the following ways:<a href="#section-2-2" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-2-3.1">Sending UDP packets can be very CPU intensive on some platforms. Reducing
-the number of ACK only packets reduces the CPU consumed at a data
-receiver. Experience shows that this reduction can be critical for high
-bandwidth connections.<a href="#section-2-3.1" class="pilcrow">¶</a>
+the number packet that only contain acknowledgements reduces the CPU consumed
+at a data receiver. Experience shows that this reduction can be critical for
+high bandwidth connections.<a href="#section-2-3.1" class="pilcrow">¶</a>
 </li>
         <li class="normal" id="section-2-3.2">Similarly, receiving and processing UDP packets can also be CPU intensive, and
 reducing acknowledgement frequency reduces this cost at a data sender.<a href="#section-2-3.2" class="pilcrow">¶</a>
