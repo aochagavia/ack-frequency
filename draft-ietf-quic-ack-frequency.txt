@@ -5,8 +5,10 @@
 QUIC                                                          J. Iyengar
 Internet-Draft                                                    Fastly
 Intended status: Standards Track                                I. Swett
-Expires: 7 September 2023                                         Google
-                                                            6 March 2023
+Expires: 11 September 2023                                        Google
+                                                            M. Kühlewind
+                                                                Ericsson
+                                                           10 March 2023
 
 
                      QUIC Acknowledgement Frequency
@@ -42,7 +44,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 7 September 2023.
+   This Internet-Draft will expire on 11 September 2023.
 
 Copyright Notice
 
@@ -651,3 +653,8 @@ Authors' Addresses
    Ian Swett
    Google
    Email: ianswett@google.com
+
+
+   Mirja Kühlewind
+   Ericsson
+   Email: mirja.kuehlewind@ericsson.com
