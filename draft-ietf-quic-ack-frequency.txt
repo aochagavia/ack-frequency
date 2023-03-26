@@ -5,10 +5,10 @@
 QUIC                                                          J. Iyengar
 Internet-Draft                                                    Fastly
 Intended status: Standards Track                                I. Swett
-Expires: 11 September 2023                                        Google
+Expires: 27 September 2023                                        Google
                                                             M. Kühlewind
                                                                 Ericsson
-                                                           10 March 2023
+                                                           26 March 2023
 
 
                      QUIC Acknowledgement Frequency
@@ -44,7 +44,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 11 September 2023.
+   This Internet-Draft will expire on 27 September 2023.
 
 Copyright Notice
 
@@ -359,18 +359,16 @@ Table of Contents
    there is a missing packet, an immediate ACK is sent.
 
    If the reordering theshold is 3 and ACKs are only sent due to
-   reordering:
-
-   Receive 1 Receive 3 -> 2 Missing Receive 4 -> 2 Missing Receive 5 ->
-   Send ACK because of 2 Receive 8 -> 6,7 Missing Receive 9 -> Send ACK
-   because of 6, 7 Missing Receive 10 -> Send ACK because of 7
+   reordering: Receive 1 Receive 3 -> 2 Missing Receive 4 -> 2 Missing
+   Receive 5 -> Send ACK because of 2 Receive 8 -> 6,7 Missing Receive 9
+   -> Send ACK because of 6, 7 Missing Receive 10 -> Send ACK because of
+   7
 
    If the reordering threshold is 5 and ACKs are only sent due to
-   reordering:
-
-   Receive 1 Receive 3 -> 2 Missing Receive 5 -> 2 Missing, 4 Missing
-   Receive 6 -> 2 Missing, 4 Missing Receive 7 -> Send ACK because of 2,
-   4 Missing Receive 8 -> 4 Missing Receive 9 -> Send ACK because of 4
+   reordering: Receive 1 Receive 3 -> 2 Missing Receive 5 -> 2 Missing,
+   4 Missing Receive 6 -> 2 Missing, 4 Missing Receive 7 -> Send ACK
+   because of 2, 4 Missing Receive 8 -> 4 Missing Receive 9 -> Send ACK
+   because of 4
 
 6.2.  Expediting Congestion Signals
 
