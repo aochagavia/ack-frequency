@@ -1592,8 +1592,7 @@ in response, as stated in <span><a href="https://rfc-editor.org/rfc/rfc9000#sect
 <a href="#section-7" class="section-number selfRef">7. </a><a href="#name-computation-of-probe-timeou" class="section-name selfRef">Computation of Probe Timeout Period</a>
       </h2>
 <p id="section-7-1">On sending an update to the peer's <code>max_ack_delay</code>, an endpoint can use this new
-value in later computations of its Probe Timeout (PTO) period; see <span><a href="https://rfc-editor.org/rfc/rfc9002#section-5.2.1" class="relref">Section 5.2.1</a> of [<a href="#QUIC-RECOVERY" class="cite xref">QUIC-RECOVERY</a>]</span>. The endpoint MUST however wait until the ACK_FREQUENCY
-frame that carries this new value is acknowledged by the peer.<a href="#section-7-1" class="pilcrow">¶</a></p>
+value in later computations of its Probe Timeout (PTO) period; see <span><a href="https://rfc-editor.org/rfc/rfc9002#section-5.2.1" class="relref">Section 5.2.1</a> of [<a href="#QUIC-RECOVERY" class="cite xref">QUIC-RECOVERY</a>]</span>.<a href="#section-7-1" class="pilcrow">¶</a></p>
 <p id="section-7-2">Until the frame is acknowledged, the endpoint MUST use the greater of the
 current <code>max_ack_delay</code> and the value that is in flight when computing the PTO
 period. Doing so avoids spurious PTOs that can be caused by an update that
