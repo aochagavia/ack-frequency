@@ -5,10 +5,10 @@
 QUIC                                                          J. Iyengar
 Internet-Draft                                                    Fastly
 Intended status: Standards Track                                I. Swett
-Expires: 27 September 2023                                        Google
+Expires: 28 September 2023                                        Google
                                                             M. Kühlewind
                                                                 Ericsson
-                                                           26 March 2023
+                                                           27 March 2023
 
 
                      QUIC Acknowledgement Frequency
@@ -44,7 +44,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 27 September 2023.
+   This Internet-Draft will expire on 28 September 2023.
 
 Copyright Notice
 
@@ -385,11 +385,6 @@ Table of Contents
    classic ECN [RFC3168].
 
 6.3.  Batch Processing of Packets
-
-   For performance reasons, an endpoint can receive incoming packets
-   from the underlying platform in a batch of multiple packets.  This
-   batch can contain enough packets to cause multiple acknowledgements
-   to be sent.
 
    To avoid sending multiple acknowledgements in rapid succession, an
    endpoint can process all packets in a batch before determining
