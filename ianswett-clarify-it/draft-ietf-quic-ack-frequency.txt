@@ -5,10 +5,10 @@
 QUIC                                                          J. Iyengar
 Internet-Draft                                                    Fastly
 Intended status: Standards Track                                I. Swett
-Expires: 27 September 2023                                        Google
+Expires: 28 September 2023                                        Google
                                                             M. Kühlewind
                                                                 Ericsson
-                                                           26 March 2023
+                                                           27 March 2023
 
 
                      QUIC Acknowledgement Frequency
@@ -44,7 +44,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 27 September 2023.
+   This Internet-Draft will expire on 28 September 2023.
 
 Copyright Notice
 
@@ -255,12 +255,12 @@ Table of Contents
       out-of-order packets do not elicit an immediate ACKs.
 
    ACK_FREQUENCY frames are ack-eliciting.  When an ACK_FREQUENCY frame
-   is lost, the sender SHOULD send another ACK_FREQUENCY frame, unless
-   an ACK_FREQUENCY frame with a larger Sequence Number value has
-   already been sent.  However, it is not forbidden to retransmit the
-   lost frame (see Section 13.3 of [QUIC-TRANSPORT]), as the receiver
-   will ignore duplicate or out-of-order ACK_FREQUENCY frames based on
-   the Sequence Number.
+   is lost, the senderit is encouraged to send another ACK_FREQUENCY
+   frame, unless an ACK_FREQUENCY frame with a larger Sequence Number
+   value has already been sent.  However, it is not forbidden to
+   retransmit the lost frame (see Section 13.3 of [QUIC-TRANSPORT]), as
+   the receiver will ignore duplicate or out-of-order ACK_FREQUENCY
+   frames based on the Sequence Number.
 
    An endpoint can send multiple ACK_FREQUENCY frames with different
    values within a connection.  A sending endpoint MUST send
