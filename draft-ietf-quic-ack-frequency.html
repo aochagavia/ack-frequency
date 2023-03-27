@@ -1322,7 +1322,7 @@ extension provides a mechanism to solve this problem.<a href="#section-2-5" clas
 <p id="section-3-1">Endpoints advertise their support of the extension described in this document by
 sending the following transport parameter (<span><a href="https://rfc-editor.org/rfc/rfc9000#section-7.2" class="relref">Section 7.2</a> of [<a href="#QUIC-TRANSPORT" class="cite xref">QUIC-TRANSPORT</a>]</span>):<a href="#section-3-1" class="pilcrow">¶</a></p>
 <span class="break"></span><dl class="dlParallel" id="section-3-2">
-        <dt id="section-3-2.1">min_ack_delay (0xff03de1a):</dt>
+        <dt id="section-3-2.1">min_ack_delay (0xff04de1a):</dt>
         <dd style="margin-left: 1.5em" id="section-3-2.2">
           <p id="section-3-2.2.1">A variable-length integer representing the minimum amount of time in
 microseconds by which the endpoint that is sending this value is able to
@@ -1760,7 +1760,7 @@ the "QUIC Transport Parameters" registry under the "QUIC Protocol" heading.<a hr
         </thead>
         <tbody>
           <tr>
-            <td class="text-left" rowspan="1" colspan="1">0xff03de1a</td>
+            <td class="text-left" rowspan="1" colspan="1">0xff04de1a</td>
             <td class="text-left" rowspan="1" colspan="1">min_ack_delay.</td>
             <td class="text-left" rowspan="1" colspan="1">
               <a href="#nego" class="auto internal xref">Section 3</a>
