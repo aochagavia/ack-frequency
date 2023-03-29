@@ -1646,7 +1646,7 @@ sending frequent ACK_FREQUENCY frames to ensure optimal performance.<a href="#se
 as communicated via the 'min_ack_delay' transport parameter, preventing the
 receiver from sending an acknowledgment every RTT in time unless packets are
 acknowledged immediately.  Additionally, Reordering Threshold values other than 1
-can be harmful, because it can delay time threshold loss detection.<a href="#section-8.1-5" class="pilcrow">¶</a></p>
+can be harmful, because it can delay loss detection more than an RTT.<a href="#section-8.1-5" class="pilcrow">¶</a></p>
 <p id="section-8.1-6">A congestion controller that is congestion window limited relies upon receiving
 acknowledgements to send additional data into the network.  An increase in
 acknowledgement delay increases the delay in sending data, which can reduce the

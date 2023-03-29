@@ -455,7 +455,7 @@ Table of Contents
    parameter, preventing the receiver from sending an acknowledgment
    every RTT in time unless packets are acknowledged immediately.
    Additionally, Reordering Threshold values other than 1 can be
-   harmful, because it can delay time threshold loss detection.
+   harmful, because it can delay loss detection more than an RTT.
 
    A congestion controller that is congestion window limited relies upon
    receiving acknowledgements to send additional data into the network.
