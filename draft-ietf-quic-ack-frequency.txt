@@ -5,10 +5,10 @@
 QUIC                                                          J. Iyengar
 Internet-Draft                                                    Fastly
 Intended status: Standards Track                                I. Swett
-Expires: 30 September 2023                                        Google
+Expires: 1 October 2023                                           Google
                                                             M. Kühlewind
                                                                 Ericsson
-                                                           29 March 2023
+                                                           30 March 2023
 
 
                      QUIC Acknowledgement Frequency
@@ -44,7 +44,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 30 September 2023.
+   This Internet-Draft will expire on 1 October 2023.
 
 Copyright Notice
 
@@ -559,7 +559,7 @@ Table of Contents
              +============+=================+===============+
              | Value      | Parameter Name. | Specification |
              +============+=================+===============+
-             | 0xff04de1a | min_ack_delay.  | Section 3     |
+             | 0xff04de1a | min_ack_delay   | Section 3     |
              +------------+-----------------+---------------+
 
                    Table 1: Addition to QUIC Transport
